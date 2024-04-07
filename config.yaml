@@ -2,7 +2,7 @@ settings:
   title: 'Status Page'
   url: 'https://status.helloxue.org/' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 7 # number of days you want to display in histogram
+  daysInHistogram: 15 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: 'All Systems Operational'
@@ -43,6 +43,20 @@ monitors:
   - id: blog-helloxue-com
     name: Blog
     url: 'https://blog.helloxue.com/'
+    method: GET
+    expectStatus: 200
+    linkable: false
+
+  - id: chat-helloxue-com
+    name: Chat
+    url: 'https://chat.helloxue.com/'
+    method: GET
+    expectStatus: 200
+    linkable: false
+
+  - id: shorten-helloxue-com
+    name: Shorten
+    url: 'https://shorten.helloxue.com/'
     method: GET
     expectStatus: 200
     linkable: false
