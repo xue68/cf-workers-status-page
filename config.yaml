@@ -54,9 +54,9 @@ monitors:
     expectStatus: 200
     linkable: false
 
-  - id: shorten-helloxue-com
+  - id: t-hix-ooo
     name: Shorten
-    url: 'https://shorten.helloxue.com/'
+    url: 'https://t.hix.ooo/'
     method: GET
     expectStatus: 200
     linkable: false
